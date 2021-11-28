@@ -1,0 +1,62 @@
+<div class='container'>
+    <div class='row'>
+        <div class="col-4">
+            <div class="prof-pic-section centerText">
+               
+            </div>
+
+           
+        </div>
+            
+        <div class="col-8">
+          <form class="new-post-form"> 
+                    <div class="post-section centerText">
+                        <div class="row">
+                        <h3> Write blogs here</h3>
+                        </div>
+                        <div class="row margin">
+                            <input type="text" id="post_title" cols="30" rows="5" placeholder="Title"></input>
+                        </div>
+                        <div class="row margin">
+                            <input type="text" id="post_body" cols="30" rows="5" placeholder="Tell Us"></input>
+                        </div>
+                    
+                        <div class="row margin">
+                            <button type='submit' class="btn">Post</button>
+                            <br>
+                        </div>
+            </form>
+
+</div>
+
+
+          
+
+            <div class="post-section centerText">
+                <h2> Posts</h2>
+                <ol>
+                    {{#each posts as |post|}}
+                        <ul class="postUl">
+                            <article class = 'posty'>
+                                <h4 class = "PT"> {{post.title}} </h4>
+                                <div class = "posts">
+                                    <p>
+                                        {{post.body}}
+                                    </p> 
+                                      
+                                    
+                                    </div>
+                                    <button type='submit' id="red" class="btn red"> Delete </button>
+                            </article>
+                            
+                        </ul>
+                        
+                    {{/each}}
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <script src="/assets/js/post.js"></script>
+    <script src="/assets/js/delete.js"></script>
+ {{!-- <script src="/assets/js/delete.js"></script> --}}
