@@ -1,3 +1,3 @@
-# MySpace-2
+# Tech blog
 
-why did we give up on myspace? it was great!!
+a blog with tech news!
